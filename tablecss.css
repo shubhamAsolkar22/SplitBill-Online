@@ -1,0 +1,49 @@
+.table-editable {
+  position: relative;
+  width: 100%;
+}
+
+
+.table-editable .glyphicon {
+  font-size: 20px;
+}
+
+.table-remove {
+  color: rgb(196, 189, 189);
+  cursor: pointer;
+}
+.table-remove:hover {
+  color: rgb(7, 6, 6);
+}
+
+
+
+.table-add {
+  color: rgb(177, 57, 77);
+  margin-top: 0%;
+  right: 2px;;
+}
+/* .table-add:hover {
+  color: #0b0;
+} */
+
+.container{
+  display: none;
+  width: 100%;
+  margin: auto;
+  margin-top: 0.4cm;
+
+}
+
+.paid-in{
+  text-align: left;
+  width: 4em;
+}
+
+.paid-in ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  text-align: right;
+}
+
+.name{
+  color: gray;
+}

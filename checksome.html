@@ -1,0 +1,71 @@
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="tablecss.css">
+    <link rel="stylesheet" href="checksome.css">
+
+  </head>
+<body>
+
+<div id="header-container"><p><u>Split Bill</u></p></div>
+
+<div class="bill-container">    
+  <span>Bill:</span> 
+<input type="number" onClick="this.select();"  id="bill-amt" placeholder="Enter bill..">
+<button name="button" id="splitButton" type="button" onclick="" >Save data</button>  
+  <!-- <div id="rupSym">&#x20b9;</div> -->
+</div>
+
+
+<div class="container">
+               
+    <div id="table" class="table-editable">
+      <!-- <span class="table-add glyphicon glyphicon-plus"></span> -->
+      <table class="table">
+        <tr>
+          <th>Member</th>
+          <th colspan="2">Paid</th>
+          <th>Pending</th>
+          <th></th>
+        </tr>
+        <tr class="vis">
+          <td class="edi name" contenteditable="true">Name:Abc</td>
+          <td><span id="rupeeSym" class="paidB"> Rs.</span></td>
+          <td contenteditable="true" class="paidA edi" >
+                       
+          </td>
+          
+          <td class="pending" >--</td>
+              <td>
+                <span class="table-remove glyphicon glyphicon-remove"></span></td>
+        </tr>
+         </tr>
+        <!-- This is our clonable table line -->
+        <tr class="hide">
+          <td class="edi name" contenteditable="true">Name:Abc</td>
+          <td><span id="rupeeSym" class="paidB"> Rs.</span></td>
+          <td contenteditable="true" class="paidA edi" >
+                       
+          </td>
+          
+          <td class="pending" >--</td>
+              <td>
+                <span class="table-remove glyphicon glyphicon-remove"></span></td>
+        </tr>
+      </table>
+      
+    </div>
+    <div class="table-add glyphicon glyphicon-plus">Add Members</div><br>
+    <!-- <button id="export-btn" class="btn btn-primary">Export Data</button>
+    <p id="export"></p> -->
+  </div>
+ 
+</body>
+<script src="checksome.js"></script>
+<script src="tablescript.js"></script>
+
+</html>
