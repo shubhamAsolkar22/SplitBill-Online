@@ -146,7 +146,7 @@ $('input, td').on('blur',function(){
         console.log("working");
   
       }
-      else{
+      else if(diff != NaN){
         $pending.html("Gives "+"Rs."+Math.abs(diff).toFixed(2));
         console.log("working");
       }
