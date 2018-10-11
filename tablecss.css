@@ -19,13 +19,20 @@
 
 
 .table-add {
-  color: rgb(177, 57, 77);
+  color: rgb(202, 141, 151);
   margin-top: 0%;
   right: 2px;;
+  border-bottom: 2px solid rgb(202, 141, 151);
+  border-left: 2px solid rgb(202, 141, 151);
+  border-right: 2px solid rgb(202, 141, 151);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 0.4em;
 }
-/* .table-add:hover {
-  color: #0b0;
-} */
+ .table-add:hover {
+  color: rgb(233, 126, 55);
+  cursor: pointer;
+} 
 
 .container{
   display: none;
