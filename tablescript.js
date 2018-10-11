@@ -30,12 +30,12 @@ $('.table-remove').click(function () {
       let share = billamt / rows;
       
       let diff = paid - share;
-      if(diff >= 0 ){
+      if(diff >= 0){
         $pending.html("Gets "+"Rs."+Math.abs(diff).toFixed(2));
         console.log("working");
   
       }
-      else{
+      else if(diff != NaN){
         $pending.html("Gives "+"Rs."+Math.abs(diff).toFixed(2));
         console.log("working");
       }
